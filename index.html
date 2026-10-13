@@ -1,142 +1,77 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#fffaf5">
-  <meta name="description" content="Find your next getaway with TripVista. Explore destinations by budget, vibe, and trip length.">
-  <title>TripVista — Find your happy place</title>
-
+  <meta name="description" content="Discover your next adventure with TripVista. Find trips that fit your budget, mood and travel style.">
+  <title>TripVista — Your next adventure awaits</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Keep the filenames and relative paths exactly as shown -->
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="navbar">
     <a class="brand" href="#home" aria-label="TripVista home">
-      <span class="brand-mark">✈</span>
-      <span>trip<span class="brand-accent">vista</span>
-        <small>FIND YOUR HAPPY PLACE</small>
-      </span>
+      <span class="brand-icon">✈</span>
+      <span>trip<span class="brand-accent">vista</span><small>FIND YOUR HAPPY PLACE</small></span>
     </a>
-
-    <nav class="nav-links" aria-label="Main navigation">
+    <nav class="nav-links">
       <a href="#explore">Explore</a>
       <a href="#planner">Trip planner</a>
-      <button class="nav-saved" id="showFavorites" type="button">
-        ♡ Saved <span id="savedCount">0</span>
-      </button>
+      <button class="nav-saved" id="showFavorites" type="button">♡ Saved <span id="savedCount">0</span></button>
     </nav>
-
     <a class="nav-cta" href="#planner">Plan a trip <span>↗</span></a>
   </header>
 
   <main id="home">
-    <section class="hero section-wrap">
-      <div class="hero-copy">
-        <div class="eyebrow">
-          <span class="live-dot"></span>
-          YOUR NEXT CHAPTER STARTS HERE
-        </div>
-
-        <h1>Less scrolling.<br>
-          More <span class="gradient-text">exploring.</span>
-          <span class="sparkle">✳</span>
-        </h1>
-
-        <p class="hero-description">
-          Big mountains, quiet beaches or a little city chaos?
-          Tell us your vibe. We'll help you find a place that feels like
-          <em>you.</em>
-        </p>
-
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Less scrolling.<br>More <span class="gradient-text">exploring.</span> <span class="heading-sparkle">✳</span></h1>
+        <p class="hero-description">Big mountains, quiet beaches or a little city chaos? Tell us your vibe. We'll help you find a place that feels like <em>you.</em></p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#planner">
-            Find my getaway <span>→</span>
-          </a>
-          <button class="button button-soft" id="heroSurprise" type="button">
-            ✦ Surprise me
-          </button>
+          <a class="button button-primary" href="#planner">Find my getaway <span>→</span></a>
+          <button class="button button-soft" id="heroSurprise" type="button"><span>✦</span> Surprise me</button>
         </div>
-
         <div class="hero-social">
-          <div class="avatar-stack">
-            <span>😊</span><span>🌻</span><span>🧋</span><span>🏕️</span>
-          </div>
-          <p>
-            <strong>Your next favourite memory</strong><br>
-            <span>could be one trip away.</span>
-          </p>
+          <div class="avatar-stack"><span>😊</span><span>🌻</span><span>🧋</span><span>🏕️</span></div>
+          <p><strong>Your next favourite memory</strong><br><span>could be one trip away.</span></p>
         </div>
       </div>
-
-      <div class="hero-art" aria-label="Travel inspiration">
-        <img class="hero-photo hero-photo-main"
-          src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1100&q=85"
-          alt="Turquoise lake surrounded by mountains">
-
-        <img class="hero-photo hero-photo-small"
-          src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=85"
-          alt="Tropical beach and clear water">
-
-        <div class="floating-note">
-          <span>✦</span>
-          <div>
-            <strong>Good vibes only</strong>
-            <small>Budget-friendly adventures</small>
-          </div>
+      <div class="hero-art" aria-label="Travel destinations">
+        <div class="hero-photo hero-photo-main">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1000&q=85" alt="Beautiful turquoise lake surrounded by mountains">
+          <div class="photo-label"><span>📍</span><span><strong>Somewhere beautiful</strong><small>It's calling your name</small></span></div>
         </div>
-
-        <div class="hero-sticker">
-          GO<br><span>EXPLORE!</span> ↗
+        <div class="hero-photo hero-photo-small">
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=500&q=85" alt="Tropical beach and clear water">
         </div>
+        <div class="floating-note"><span>✦</span><div><strong>Good vibes only</strong><small>Budget-friendly adventures</small></div></div>
+        <div class="hero-sticker">GO<br><span>EXPLORE!</span> ↗</div>
+        <span class="decor decor-one">✳</span><span class="decor decor-two">✦</span>
       </div>
     </section>
 
     <section class="trust-strip">
-      <div>
-        <span>🧭</span>
-        <strong>Your vibe, your trip</strong>
-        <small>Personalised suggestions</small>
-      </div>
-      <div>
-        <span>💸</span>
-        <strong>Budget-conscious</strong>
-        <small>Options for every wallet</small>
-      </div>
-      <div>
-        <span>🌈</span>
-        <strong>Adventure awaits</strong>
-        <small>Find a new favourite</small>
-      </div>
+      <div><span>🧭</span><strong>Your vibe, your trip</strong><small>Personalised suggestions</small></div>
+      <div><span>💸</span><strong>Budget-conscious</strong><small>Options for every wallet</small></div>
+      <div><span>🌈</span><strong>Adventure awaits</strong><small>Find a new favourite</small></div>
     </section>
 
     <section class="planner-section section-wrap" id="planner">
       <div class="section-heading">
-        <div>
-          <div class="eyebrow">LET'S MAKE A PLAN</div>
-          <h2>Your kind of <span class="gradient-text">getaway.</span></h2>
-        </div>
+        <div><div class="eyebrow">LET'S MAKE A PLAN</div><h2>Your kind of <span class="gradient-text">getaway.</span></h2></div>
         <p>A few quick picks. A whole lot of possibilities.</p>
       </div>
 
       <form id="tripForm" class="planner-card">
-        <div class="planner-top">
-          <span class="planner-icon">✈</span>
-          <div>
-            <h3>Build your little escape</h3>
-            <p>No wrong answers. Follow your travel mood.</p>
-          </div>
-          <span class="step-pill">YOUR TRIP · 01</span>
-        </div>
-
+        <div class="planner-top"><span class="planner-icon">✈</span><div><h3>Build your little escape</h3><p>No wrong answers. Follow your travel mood.</p></div><span class="step-pill">YOUR TRIP · 01</span></div>
         <div class="form-grid">
-          <label class="field">
-            <span>💰 What's your budget?</span>
+          <label class="field"><span>💰 What's your budget?</span>
             <select id="budget" name="budget">
               <option value="any">Show me everything</option>
               <option value="budget">Under ₹10,000</option>
@@ -145,9 +80,7 @@
               <option value="luxury">₹50,000+</option>
             </select>
           </label>
-
-          <label class="field">
-            <span>✨ What's your vibe?</span>
+          <label class="field"><span>✨ What's your vibe?</span>
             <select id="vibe" name="vibe">
               <option value="any">Surprise me with anything</option>
               <option value="nature">🌿 Nature & mountains</option>
@@ -158,9 +91,7 @@
               <option value="romantic">💗 Romantic escape</option>
             </select>
           </label>
-
-          <label class="field">
-            <span>🗓️ How long are we going?</span>
+          <label class="field"><span>🗓️ How long are we going?</span>
             <select id="duration" name="duration">
               <option value="any">Any duration</option>
               <option value="weekend">2–3 days</option>
@@ -169,90 +100,68 @@
               <option value="long">9+ days</option>
             </select>
           </label>
-
-          <label class="field">
-            <span>🧳 Who's coming along?</span>
+          <label class="field"><span>🧳 Who's coming along?</span>
             <select id="company" name="company">
               <option value="any">Just seeing my options</option>
               <option value="solo">Solo adventure</option>
               <option value="friends">Friends trip</option>
-              <option value="family">Family getaway</option>
-              <option value="couple">Couple / romantic trip</option>
+              <option value="family">Family time</option>
+              <option value="couple">Couple getaway</option>
             </select>
           </label>
         </div>
-
-        <button class="button button-primary planner-submit" type="submit">
-          Find my destinations <span>→</span>
-        </button>
+        <div class="planner-bottom">
+          <p><span>💡</span> Not sure yet? That's what discovering is for.</p>
+          <button class="button button-primary submit-button" type="submit">Find my destinations <span>→</span></button>
+        </div>
       </form>
     </section>
 
-    <section class="explore-section section-wrap" id="explore">
-      <div class="section-heading explore-heading">
-        <div>
-          <div class="eyebrow">A LITTLE INSPIRATION</div>
-          <h2>Little places, <span class="gradient-text">big memories.</span></h2>
-          <p class="section-subtitle">Handpicked places for your next story.</p>
-        </div>
-
-        <div class="search-wrap">
-          <span>⌕</span>
-          <input id="searchInput" type="search"
-            placeholder="Search destinations..."
-            aria-label="Search destinations">
-        </div>
+    <section class="results-section section-wrap" id="explore">
+      <div class="section-heading results-heading">
+        <div><div class="eyebrow">YOUR PERSONAL TRAVEL BOARD</div><h2 id="resultsTitle">Little places, <span class="gradient-text">big memories.</span></h2><p id="resultsSubtitle">A few ideas to get your wanderlust going.</p></div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search places..." aria-label="Search destinations"></label>
       </div>
 
-      <div class="toolbar">
-        <div class="filter-pills" role="group" aria-label="Quick filters">
-          <button class="filter-pill active" type="button" data-quick-filter="all">All places</button>
-          <button class="filter-pill" type="button" data-quick-filter="nature">🌿 Nature</button>
-          <button class="filter-pill" type="button" data-quick-filter="beach">🏖️ Beaches</button>
-          <button class="filter-pill" type="button" data-quick-filter="culture">🏛️ Culture</button>
-          <button class="filter-pill" type="button" data-quick-filter="adventure">🧗 Adventure</button>
+      <div class="filter-row">
+        <div class="filter-chips" id="filterChips">
+          <button class="filter-chip active" type="button" data-filter="all">✦ All places</button>
+          <button class="filter-chip" type="button" data-filter="nature">🌿 Nature</button>
+          <button class="filter-chip" type="button" data-filter="beach">🏖️ Beaches</button>
+          <button class="filter-chip" type="button" data-filter="adventure">🧗 Adventure</button>
+          <button class="filter-chip" type="button" data-filter="culture">🏛️ Culture</button>
+          <button class="filter-chip" type="button" data-filter="city">🌆 City life</button>
         </div>
-
-        <label class="sort-label">
-          Sort by
-          <select id="sortSelect" aria-label="Sort destinations">
-            <option value="recommended">Recommended</option>
-            <option value="price-low">Budget: low to high</option>
-            <option value="price-high">Budget: high to low</option>
-            <option value="name">Name: A to Z</option>
-          </select>
-        </label>
+        <label class="sort-control"><span>Sort:</span><select id="sortSelect" aria-label="Sort destinations"><option value="recommended">Recommended</option><option value="priceLow">Price: low to high</option><option value="priceHigh">Price: high to low</option><option value="name">Name A–Z</option></select></label>
       </div>
 
-      <div class="results-meta">
-        <p id="resultsCount" aria-live="polite">Explore destinations</p>
-        <button id="clearFilters" class="text-button" type="button">Clear filters</button>
-      </div>
-
+      <div id="resultsMessage" class="results-message" role="status" aria-live="polite"></div>
       <div id="destinationGrid" class="destination-grid"></div>
-
       <div id="emptyState" class="empty-state" hidden>
-        <div class="empty-emoji">🧭</div>
-        <h3>No trips found just yet</h3>
-        <p>Try changing your filters or searching for another place.</p>
-        <button class="button button-primary" id="emptyReset" type="button">
-          Show all destinations
-        </button>
+        <span>🧭</span><h3>Hmm, no trips found!</h3><p>Try a different budget, mood or search.</p>
+        <button class="button button-primary" id="resetFilters" type="button">Show all destinations</button>
       </div>
+      <div class="more-wrap"><button class="button button-outline" id="showAllBtn" type="button">Explore all destinations ↓</button></div>
+    </section>
+
+    <section class="inspiration-banner section-wrap">
+      <div class="banner-copy"><span class="banner-label">A LITTLE REMINDER</span><h2>You don't need a reason.<br>You need a <span>destination.</span></h2><p>Make the plan. Take the photos. Collect the stories.</p><button class="button button-white" id="bannerSurprise" type="button">Pick a random adventure ✦</button></div>
+      <div class="banner-art"><span class="banner-sun">☼</span><div class="banner-mountain mountain-back"></div><div class="banner-mountain mountain-front"></div><span class="banner-cloud">☁</span><span class="banner-plane">✈</span></div>
     </section>
   </main>
 
   <footer class="footer">
-    <a class="brand footer-brand" href="#home">
-      <span class="brand-mark">✈</span>
-      <span>trip<span class="brand-accent">vista</span>
-        <small>FIND YOUR HAPPY PLACE</small>
-      </span>
-    </a>
-    <p>Made for the places you'll never forget. 🌍</p>
-    <span>© <span id="year"></span> TripVista</span>
+    <a class="brand footer-brand" href="#home"><span class="brand-icon">✈</span><span>trip<span class="brand-accent">vista</span><small>FIND YOUR HAPPY PLACE</small></span></a>
+    <p>Made with ☀ and a little wanderlust.</p>
+    <a href="#home">Back to top ↑</a>
+    <small class="footer-note">TripVista is a demo project. Prices are approximate estimates, not live travel quotes.</small>
   </footer>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="tripDialog" class="trip-dialog">
+    <button class="dialog-close" id="closeDialog" type="button" aria-label="Close">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
 </body>
 </html>
